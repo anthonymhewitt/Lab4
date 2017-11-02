@@ -20,17 +20,13 @@ public abstract class GamePlay {
 	protected void AddPlayersToGame(HashMap<UUID,Player> Players)
 	{
 		GamePlayers.putAll(Players);
-		//TODO: Implement this method
 	}
 	protected void RemovePlayerFromGame(Player p)
 	{
-		GamePlayers.remove(p.getPlayerID());
-		//TODO: Implement this method		
+		GamePlayers.remove(p.getPlayerID());	
 	}
 	protected Player GetPlayerInGame(Player p)
-	{
-		
-		//TODO: Implement this method	
+	{	
 		return GamePlayers.get(p.getPlayerID());
 	}
 
